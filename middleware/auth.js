@@ -1,4 +1,6 @@
+const CustomAPIError = require("../errors/custom-error");
 const jwt = require("jsonwebtoken");
+
 const { StatusCodes } = require("http-status-codes");
 
 const authenticationMiddleware = async (req, res, next) => {
